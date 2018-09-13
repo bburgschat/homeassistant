@@ -9,7 +9,6 @@ sudo usermod -aG docker pi
 sudo apt install python-pip
 sudo pip install --upgrade docker-compose
 ```
-
 ## Create basic structure
 ```
 pi@raspberrypi:/ $ mkdir /var/docker
@@ -26,9 +25,10 @@ pi@raspberrypi:/var/docker $ mkdir data/homeassistant
 pi@raspberrypi:/var/docker $ mkdir config/dockermon
 ```
 
+### Preload images
+```
 pi@raspberrypi:/var/docker $ docker-compose pull
-# lots of data
-
+```
 
 Create influxdb Config
 pi@RPi3:/opt $ docker run --rm influxdb influxd config > /var/docker/config/influxdb/influxdb.conf
