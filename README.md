@@ -1,7 +1,7 @@
 # homeassistant
 help.github.com/articles/basic-writing-and-formatting-syntax/
 ## Install docker and docker compose
-1. Use built in docker and docker-compose from raspian
+Use built in docker and docker-compose from raspian
 ```
 curl -fsSL get.docker.com -o get-docker.sh
 sudo sh get-docker.sh
@@ -11,7 +11,6 @@ sudo pip install --upgrade docker-compose
 ```
 
 ## Create basic structure
-
 ```
 pi@raspberrypi:/ $ mkdir /var/docker
 pi@raspberrypi:/ $ chown pi:pi /var/docker
