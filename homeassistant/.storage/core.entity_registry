@@ -1,0 +1,24 @@
+{
+    "data": {
+        "entities": [
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "entity_id": "media_player.apple_tv",
+                "name": null,
+                "platform": "apple_tv",
+                "unique_id": "ba753efa2015157bd094d405599223a50af144ea30c22ce5755f88d0aca95845"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "entity_id": "remote.apple_tv",
+                "name": null,
+                "platform": "apple_tv",
+                "unique_id": "ba753efa2015157bd094d405599223a50af144ea30c22ce5755f88d0aca95845"
+            }
+        ]
+    },
+    "key": "core.entity_registry",
+    "version": 1
+}
