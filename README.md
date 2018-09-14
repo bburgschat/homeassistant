@@ -97,3 +97,41 @@ docker-compose up -d portainer
   -v /home/pi/home-assistant:/config \
   -v /etc/localtime:/etc/localtime:ro \
   homeassistant/raspberrypi2-homeassistant:0.78.0b2
+
+
+
+#Autostart docker-compose
+
+
+```
+pi@raspberrypi:/etc/systemd/system $ sudo vi docker-compose-homeassistant.service
+```
+
+```
+# /etc/systemd/system/docker-compose-homeassistant.service
+
+[Unit]
+Description=Docker Compose Opt Service
+Requires=docker.service
+After=docker.service
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+WorkingDirectory=/var/docker/config
+ExecStart=/usr/local/bin/docker-compose up -d
+ExecStop=/usr/local/bin/docker-compose stop
+TimeoutStartSec=0
+
+[Install]
+WantedBy=multi-user.target
+```
+
+```
+pi@raspberrypi:/etc/systemd/system $ sudo systemctl enable docker-compose-homeassistant
+Created symlink /etc/systemd/system/multi-user.target.wants/docker-compose-homeassistant.service → /etc/systemd/system/docker-compose-homeassistant.service.
+pi@raspberrypi:/etc/systemd/system $A
+```
+
+A
+

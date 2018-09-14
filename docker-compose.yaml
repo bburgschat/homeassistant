@@ -35,7 +35,7 @@ services:
     volumes:
       - /var/docker/config/homeassistant:/config
       - /etc/localtime:/etc/localtime:ro
-      #- /etc/letsencrypt:/etc/letsencrypt:ro
+      - /etc/letsencrypt:/etc/letsencrypt:ro
     #devices:
     #  - /dev/ttyUSB0:/dev/ttyUSB0:rwm
     #  - /dev/ttyUSB1:/dev/ttyUSB1:rwm
@@ -109,25 +109,27 @@ services:
       - /var/docker/data/portainer:/data:rw
       - /var/run/docker.sock:/var/run/docker.sock
     restart: "no" # because the exit code(s) are wrong
+    networks:
+      - default
 
-  organizr:
-    container_name: organizr
-    image: lsioarmhf/organizr
-    ports:
-      - 80:80
-      #- 443:443
-    volumes:
-      - /var/docker/config/organizr:/config:rw
-      #- /etc/letsencrypt:/etc/letsencrypt:ro
-    environment:
-      - PGID=1000
-      - PUID=1000
-    restart: on-failure
-    healthcheck:
-      test: ["CMD", "curl", "-f", "http://127.0.0.1"]
-      interval: 30s
-      timeout: 10s
-      retries: 5
+  #organizr:
+  #  container_name: organizr
+  #  image: lsioarmhf/organizr
+  #  ports:
+  #    - 80:80
+  #    - 443:443
+  #  volumes:
+  #    - /var/docker/config/organizr:/config:rw
+  #    - /etc/letsencrypt:/etc/letsencrypt:ro
+  #  environment:
+  #    - PGID=1000
+  #    - PUID=1000
+  #  restart: on-failure
+  #  healthcheck:
+  #    test: ["CMD", "curl", "-f", "http://127.0.0.1"]
+  #    interval: 30s
+  #    timeout: 10s
+  #    retries: 5
 
   dockermon:
     container_name: dockermon
@@ -138,3 +140,8 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock
       - /var/docker/config/dockermon:/config
     restart: on-failure
+
+networks:
+    gateway:
+       external:
+          name: gateway
