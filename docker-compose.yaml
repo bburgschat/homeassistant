@@ -12,6 +12,11 @@ services:
     depends_on:
       influxdb:
         condition: service_healthy
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://127.0.0.1:3000"]
+      interval: 30s
+      timeout: 10s
+      retries: 6
 
   influxdb:
     container_name: influxdb
@@ -31,20 +36,22 @@ services:
   homeassistant:
     container_name: homeassistant
     image: homeassistant/raspberrypi2-homeassistant
-    network_mode: "host"
+    ports:
+      - 8123:8123
     volumes:
       - /var/docker/config/homeassistant:/config
       - /etc/localtime:/etc/localtime:ro
       - /etc/letsencrypt:/etc/letsencrypt:ro
-    #devices:
+    devices:
     #  - /dev/ttyUSB0:/dev/ttyUSB0:rwm
     #  - /dev/ttyUSB1:/dev/ttyUSB1:rwm
+    - /dev/ttyACM0:/dev/ttyACM0
     restart: on-failure
     depends_on:
       influxdb:
         condition: service_healthy
       mosquitto:
-        condition: service_started
+        condition: service_healthy
     healthcheck:
       test: ["CMD", "curl", "-f", "http://127.0.0.1:8123"]
       interval: 30s
@@ -85,6 +92,12 @@ services:
       - /var/docker/config/mosquitto:/mosquitto/config:ro
       - /var/docker/data/mosquitto:/mosquitto/data
     restart: on-failure
+    healthcheck:
+      #test: 'netstat -an | grep 1883 > /dev/null; if [ 0 != $? ]; then exit 1; fi;'
+      test: "nc -z localhost 1883"
+      interval: 30s
+      timeout: 10s
+      retries: 6
 
   #mqtt-bridge:
   #  container_name: mqtt-bridge

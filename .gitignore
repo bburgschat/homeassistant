@@ -2,4 +2,5 @@ homeassistant/home-assistant.log
 homeassistant/home-assistant_v2.db
 homeassistant/secrets.yaml
 homeassistant/known_devices.yaml
+homeassistant/*.bak
 organizr/log/nginx/access.log

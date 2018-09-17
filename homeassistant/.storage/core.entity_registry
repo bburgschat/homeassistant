@@ -32,6 +32,94 @@
                 "name": null,
                 "platform": "cast",
                 "unique_id": "94ac7949-20dd-629a-a15d-77296de43106"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "entity_id": "zwave.zwaveme_zme_uzb1_usb_stick",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "node-1"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "entity_id": "zwave.domitech_smart_led_retrofit_kit_ze27eu",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "node-15"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "entity_id": "light.domitech_smart_led_retrofit_kit_ze27eu_level",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "15-72057594294403073"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "entity_id": "zwave.danfoss_devolo_home_control_radiator_thermostat",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "node-11"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "entity_id": "climate.danfoss_devolo_home_control_radiator_thermostat_heating_1",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "11-72057594227769362"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "entity_id": "zwave.danfoss_devolo_home_control_radiator_thermostat_2",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "node-12"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "entity_id": "sensor.danfoss_devolo_home_control_radiator_thermostat_temperature",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "12-72057594244251666"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "entity_id": "climate.danfoss_devolo_home_control_radiator_thermostat_heating_1_2",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "12-72057594244546578"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "entity_id": "zwave.danfoss_devolo_home_control_radiator_thermostat_3",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "node-7"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "entity_id": "sensor.danfoss_devolo_home_control_radiator_thermostat_temperature_2",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "7-72057594160365586"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "entity_id": "climate.danfoss_devolo_home_control_radiator_thermostat_heating_1_3",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "7-72057594160660498"
             }
         ]
     },
