@@ -35,7 +35,7 @@ services:
       
   homeassistant:
     container_name: homeassistant
-    image: homeassistant/raspberrypi2-homeassistant
+    image: homeassistant/raspberrypi3-homeassistant:0.78.0
     ports:
       - 8123:8123
     volumes:

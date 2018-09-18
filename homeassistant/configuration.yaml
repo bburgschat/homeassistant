@@ -9,8 +9,8 @@ homeassistant:
   unit_system: metric
   # Pick yours from here: http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
   time_zone: Europe/Berlin
-  # Customization file
-  customize: !include customize.yaml
+  #customization
+  customize: !include_dir_merge_named  customization/
 
 # Show links to resources in log and frontend
 # introduction:
@@ -212,6 +212,4 @@ zwave:
 group: !include_dir_merge_named groups/
 #automation: !include automations.yaml
 automation: !include_dir_merge_list automation/
-#customization
-customize: !include_dir_merge_named  customization/
 script: !include scripts.yaml
