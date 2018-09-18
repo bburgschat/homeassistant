@@ -1,0 +1,35 @@
+- alias: Eingangsbeleuchtung zu Sonnenuntergang an
+  trigger:
+    platform: sun
+    event: sunset
+    offset: "-00:30:00"
+  action:
+    - service: light.turn_on
+      data:
+        entity_id: light.domitech_smart_led_retrofit_kit_ze27eu_level
+        brightness: 70
+- alias: Eingangsbeleuchtung Mitternacht aus
+  trigger:
+     platform: time
+     at: "23:30:00"
+  action:
+    - service: light.turn_off
+      data:
+        entity_id: light.domitech_smart_led_retrofit_kit_ze27eu_level
+- alias: Eingangsbeleuchtung morgens an
+  trigger:
+     platform: time
+     at: "06:00:00"
+  action:
+    - service: light.turn_on
+      data:
+        entity_id: light.domitech_smart_led_retrofit_kit_ze27eu_level
+        brightness: 70
+- alias: Eingangsbeleuchtung morgens aus
+  trigger:
+     platform: time
+     at: "07:00:00"
+  action:
+    - service: light.turn_off
+      data:
+        entity_id: light.domitech_smart_led_retrofit_kit_ze27eu_level

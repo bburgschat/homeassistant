@@ -1,0 +1,18 @@
+qnap:
+  name: Qnap
+  #view: yes
+  entities:
+    - sensor.qnap_status
+    - sensor.qnap_system_temperature
+    - sensor.qnap_cpu_usage
+    - sensor.qnap_memory_usage
+    #- sensor.qnap_memory_available
+    #- sensor.qnap_memory_used
+    - sensor.qnap_smart_status_drive_1
+    - sensor.qnap_volume_used_volume_1
+    #- sensor.qnap_free_space_volume_1
+    #- sensor.qnap_used_space_volume_1
+    - sensor.qnap_temperature_drive_1
+    #- sensor.qnap_network_link_eth0
+    - sensor.qnap_network_down_eth0
+    - sensor.qnap_network_up_eth0
