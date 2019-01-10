@@ -9,6 +9,9 @@
         - tue
         - wed
         - thu
+        - fri
+        - sat
+        - sun
   action:
     service: scene.turn_on
     entity_id: scene.nachtruhe
@@ -20,3 +23,29 @@
   action:
     service: scene.turn_on
     entity_id: scene.romantic
+- alias: Guten Morgen
+  trigger:
+     platform: time
+     at: "06:15:00"
+  condition:
+    - condition: time
+      weekday:
+        - mon
+        - tue
+        - wed
+        - thu
+        - fri
+        - sat
+        - sun
+  action:
+    service: scene.turn_on
+    entity_id: scene.romantic
+- alias: Licht am Tag aus
+  trigger:
+    platform: sun
+    event: sunrise
+    offset: "-00:10:00"
+  action:
+    service: scene.turn_on
+    entity_id: scene.nachtruhe
+

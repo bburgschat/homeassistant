@@ -3,34 +3,40 @@
 
 title: Home
 views:
-  - title: DEFAULT
+  - id: 0  # Automatically created id
+    title: DEFAULT
     icon: mdi:home
     cards:
-      - type: entity-filter
+      - id: 30453ed78a2741eb9ccb88b6c014afb8  # Automatically created id
+        type: entity-filter
         entities:
           - entity: device_tracker.mareikestelefon
             name: Mareike
           - entity: device_tracker.bennystelefon
             name: Benny
         state_filter:
-          - 'home'
+          - home
         card:
           type: glance
           title: Zuhause sind
-      - type: entities
+      - id: 152d4c24a5af44029f98150e717c7e01  # Automatically created id
+        type: entities
         title: Lichtscenen
         entities:
           - scene.romantic
           - scene.nachtruhe
-      - type: entities
+      - id: 3d0a54ff062842fabc44430ea3a32450  # Automatically created id
+        type: entities
         ttile: Verschiedenes
         entities:
           - sun.sun
           - sensor.moon
-  - title: Haustechnik
+  - id: 1  # Automatically created id
+    title: Haustechnik
     icon: mdi:desktop-mac
     cards:
-      - type: entities
+      - id: ee1440662a6b455085c69ed6d9b579dd  # Automatically created id
+        type: entities
         title: Qnap
         show_header_toggle: true
         entities:
@@ -50,28 +56,104 @@ views:
 #          - sensor.speedtest_ping
 #          - sensor.speedtest_upload
 #          - sensor.speedtest_download
-  - title: Heizung
+  - id: 2  # Automatically created id
+    title: Heizung
     icon: mdi:thermometer-lines
     cards:
-      - type: entities
+      #- id: 0c3ecbd547674d43a0d1cdf8186a9352  # Automatically created id
+      #  type: vertical-stack
+      #  cards:
+      - id: 568d3b9a98a748dc9518885569a723bf      # Automatically created id
+        type: entities
         title: Heizung
         show_header_toggle: true
         entities:
-          - climate.danfoss_devolo_home_control_radiator_thermostat_heating_1_4
-          - climate.danfoss_devolo_home_control_radiator_thermostat_heating_1_2
-          - climate.danfoss_devolo_home_control_radiator_thermostat_heating_1
-          - climate.danfoss_devolo_home_control_radiator_thermostat_heating_1_3
-          - climate.devolo_rs_room_sensor_heating_1
-  - title: Time based Automations
+          - climate.devolo_thermostat_10
+          - climate.devolo_thermostat_12
+          - climate.devolo_thermostat_13
+          - climate.devolo_thermostat_15
+          - climate.devolo_thermostat_19
+          - climate.devolo_thermostat_8
+          - climate.devolo_thermostat_7
+          - climate.devolo_room_thermostat_11
+      - id: d1f016bb23d0432db6274d0f524cb590      # Automatically created id
+        type: sensor
+        entity: sensor.devolo_thermostat_10
+        name: Temperatur Wohnzimmer
+        unit: Grad
+#            height: 75
+#            graph: line
+#            line_color: '#3498db'
+      - id: 99b84d2f228b4a958cd8514a66df574f      # Automatically created id
+        type: sensor
+        entity: sensor.devolo_thermostat_12
+        name: Temperatur Küche
+        unit: Grad
+#            height: 75
+#            graph: line
+#            line_color: '#3498db'
+      - id: dae0805a32a2457586ed9fefe941c20f      # Automatically created id
+        type: sensor
+        entity: sensor.devolo_thermostat_13
+        name: Temperatur Badezimmer
+        unit: Grad
+#            height: 75
+#            graph: line
+#            line_color: '#3498db'
+      - id: fdcfedaf1ae0433ab1dfbf2c347bbc19      # Automatically created id
+        type: sensor
+        entity: sensor.devolo_thermostat_15
+        name: Temperatur Wintergarten
+        unit: Grad
+#            height: 75
+#            graph: line
+#            line_color: '#3498db'
+      - id: b797591f6a574d3d8152f98ac528d781      # Automatically created id
+        type: sensor
+        entity: sensor.devolo_thermostat_19
+        name: Temperatur Arbeitszimmer
+        unit: Grad
+#            height: 75
+#            graph: line
+#            line_color: '#3498db'
+      - id: 003d0e272b5b4dc9b0ffccdb9aafeacd      # Automatically created id
+        type: sensor
+        entity: sensor.devolo_thermostat_8
+        name: Temperatur Kindezimmer
+        unit: Grad
+#            height: 75
+#            graph: line
+#            line_color: '#3498db'
+      - id: 3ca48e34a71742be9737c63b88951dbe      # Automatically created id
+        type: sensor
+        entity: sensor.devolo_thermostat_7
+        name: Temperatur Schlafzimmer
+        unit: Grad
+#            height: 75
+#            graph: line
+#            line_color: '#3498db'
+      - id: 8340438ed2af465e97be1867dae8ec2f  # Automatically created id
+        type: sensor
+        entity: sensor.devolo_room_thermostat_11
+        name: Temperatur Erdgeschoss
+        unit: Grad
+#            height: 75
+#            graph: line
+#            line_color: '#3498db'
+
+  - id: 3  # Automatically created id
+    title: Time based Automations
     icon: mdi:timetable
     cards:
-      - type: entities
+      - id: bf6e32c9fcad4944b2e3ca92cc955a86  # Automatically created id
+        type: entities
         entities:
 #          - automation.arbeitszimmer_abends_warm
           - automation.licht_zu_sonnenuntergang
 #          - automation.arbeitszimmer_nachts__tags_kuhl
           - automation.ab_ins_bett
-  - title: Licht
+  - id: 4  # Automatically created id
+    title: Licht
     icon: mdi:lightbulb
     cards:
       #- type: glance
@@ -79,12 +161,13 @@ views:
       #  entities:
       #  - entity: light.domitech_smart_led_retrofit_kit_ze27eu_level
       #    name: Eingang
-      - type: entities
+      - id: 522c73b0997d43f0a6a6ab9ab542bc22  # Automatically created id
+        type: entities
         title: Außenbeleuchtung
         show_header_toggle: false
         entities:
-        - entity: light.domitech_smart_led_retrofit_kit_ze27eu_level
-          name: Eingang
+          - entity: light.domitech_20
+            name: Eingang
         #show_header_toggle: true
         # The entities here will be shown in the same order as specified.
         # Each entry is an entity ID or a map with extra options.
@@ -97,7 +180,8 @@ views:
         #    service: light.toggle
         #    service_data:
         #      entity_id: light.domitech_smart_led_retrofit_kit_ze27eu_level
-      - type: entities
+      - id: e9ed90b2a45f4f68b7573653561b3728  # Automatically created id
+        type: entities
         title: Wohnzimmerbeleuchtung
         entities:
           - entity: switch.wlan_sd1
@@ -106,5 +190,24 @@ views:
             name: Schrank
           - entity: switch.wlan_sd3
             name: Fernseher
-          #- switch.wlan_sd4
+          - entity: switch.wlan_sd4
+            name: Sterne
 
+          #- switch.wlan_sdcon: mdi:lightbulb
+  - id: 5  # Automatically created id
+    title: Batterien
+    icon: mdi:battery
+    cards:
+      - id: 2b4b5bae911a430aa9673ecb3691519d  # Automatically created id
+        type: entities
+        title: Batterien
+        show_header_toggle: false
+        entities:
+          - sensor.kueche_thermostat_battery
+          - sensor.wohnzimmer_thermostat_battery
+          - sensor.wohnzimmer_room_thermostat_battery
+          - sensor.arbeitszimmer_thermostat_battery
+          - sensor.kinderzimmer_thermostat_battery
+          - sensor.schlafzimmer_thermostat_battery
+          - sensor.wintergarten_thermostat_battery
+          - sensor.badezimmer_thermostat_battery

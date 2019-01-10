@@ -1,22 +1,22 @@
 version: '2.1'
 services:
-  grafana:
-    container_name: grafana
-    image: raymondmm/grafana
-    ports:
-      - 3000:3000
-    volumes:
-      - /var/docker/config/grafana:/etc/grafana:rw
-      - /var/docker/data/grafana:/var/lib/grafana:rw
-    restart: on-failure
-    depends_on:
-      influxdb:
-        condition: service_healthy
-    healthcheck:
-      test: ["CMD", "curl", "-f", "http://127.0.0.1:3000"]
-      interval: 30s
-      timeout: 10s
-      retries: 6
+  #grafana:
+  #  container_name: grafana
+  #  image: raymondmm/grafana
+  #  ports:
+  #    - 3000:3000
+  #  volumes:
+  #    - /var/docker/config/grafana:/etc/grafana:rw
+  #    - /var/docker/data/grafana:/var/lib/grafana:rw
+  #  restart: on-failure
+  #  depends_on:
+  #    influxdb:
+  #      condition: service_healthy
+  #  healthcheck:
+  #    test: ["CMD", "curl", "-f", "http://127.0.0.1:3000"]
+  #    interval: 30s
+  #    timeout: 10s
+  #    retries: 6
 
   influxdb:
     container_name: influxdb
@@ -35,7 +35,7 @@ services:
       
   homeassistant:
     container_name: homeassistant
-    image: homeassistant/raspberrypi3-homeassistant:0.78.0
+    image: homeassistant/raspberrypi3-homeassistant:0.85.0
     ports:
       - 8123:8123
     volumes:
@@ -43,9 +43,7 @@ services:
       - /etc/localtime:/etc/localtime:ro
       - /etc/letsencrypt:/etc/letsencrypt:ro
     devices:
-    #  - /dev/ttyUSB0:/dev/ttyUSB0:rwm
-    #  - /dev/ttyUSB1:/dev/ttyUSB1:rwm
-    - /dev/ttyACM0:/dev/ttyACM0
+      - /dev/ttyZWAVE:/dev/ttyZWAVE
     restart: on-failure
     depends_on:
       influxdb:
@@ -57,29 +55,6 @@ services:
       interval: 30s
       timeout: 10s
       retries: 6
-
-  #node-red:
-  #  container_name: node-red
-  #  image: nodered/node-red-docker:rpi-v8
-  #  ports:
-  #    - 1880:1880
-  #  volumes:
-  #    - /opt/node-red:/data
-  #    - /etc/localtime:/etc/localtime:ro
-  #    - /etc/timezone:/etc/timezone:ro
-  #  restart: "no" # because the exit code(s) are wrong
-  #  depends_on:
-  #    mosquitto:
-  #      condition: service_started
-  #    #mqtt-bridge:
-  #    #  condition: service_started
-  #    homeassistant:
-  #      condition: service_healthy
-  #  healthcheck:
-  #    test: ["CMD", "curl", "-f", "http://127.0.0.1:1880"]
-  #    interval: 30s
-  #    timeout: 10s
-  #    retries: 5
 
   mosquitto:
     container_name: mosquitto
@@ -99,20 +74,6 @@ services:
       timeout: 10s
       retries: 6
 
-  #mqtt-bridge:
-  #  container_name: mqtt-bridge
-  #  build:
-  #    context: https://github.com/stjohnjohnson/smartthings-mqtt-bridge.git
-  #    dockerfile: Dockerfile-rpi
-  #  ports:
-  #    - 8080:8080
-  #  volumes:
-  #    - /opt/mqtt-bridge:/config
-  #  restart: on-failure
-  #  depends_on:
-  #    homeassistant:
-  #      condition: service_healthy
-
   portainer:
     container_name: portainer
     image: portainer/portainer
@@ -124,25 +85,6 @@ services:
     restart: "no" # because the exit code(s) are wrong
     networks:
       - default
-
-  #organizr:
-  #  container_name: organizr
-  #  image: lsioarmhf/organizr
-  #  ports:
-  #    - 80:80
-  #    - 443:443
-  #  volumes:
-  #    - /var/docker/config/organizr:/config:rw
-  #    - /etc/letsencrypt:/etc/letsencrypt:ro
-  #  environment:
-  #    - PGID=1000
-  #    - PUID=1000
-  #  restart: on-failure
-  #  healthcheck:
-  #    test: ["CMD", "curl", "-f", "http://127.0.0.1"]
-  #    interval: 30s
-  #    timeout: 10s
-  #    retries: 5
 
   dockermon:
     container_name: dockermon

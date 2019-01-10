@@ -11,18 +11,21 @@ homeassistant:
   time_zone: Europe/Berlin
   #customization
   customize: !include_dir_merge_named  customization/
+  #customize: !include customize.yaml
+
 
 # Show links to resources in log and frontend
 # introduction:
 
 # Enables the frontend
 frontend:
+  javascript_version: latest
 
 # Enables configuration UI
 config:
 
 http:
-  api_password: !secret api_password_http
+#  api_password: !secret api_password_http
 # Uncomment this if you are using SSL/TLS, running in Docker container, etc.
 #   base_url: example.duckdns.org:8123
 
@@ -96,6 +99,56 @@ sensor:
       - volume_size_free
       - volume_size_used
       - volume_percentage_used
+  - platform: template
+    sensors:
+      arbeitszimmer_thermostat_battery:
+        friendly_name: 'Thermostat Arbeitzimmer'
+        value_template: '{{ states.zwave.devolo_thermostat_19.attributes.battery_level }}'
+        unit_of_measurement: '%'
+        entity_id:  zwave.devolo_thermostat_19
+        device_class: battery
+      schlafzimmer_thermostat_battery:
+        friendly_name: 'Thermostat Schlafzimmer'
+        value_template: '{{ states.zwave.devolo_thermostat_7.attributes.battery_level }}'
+        unit_of_measurement: '%'
+        entity_id:  zwave.devolo_thermostat_7
+        device_class: battery
+      kinderzimmer_thermostat_battery:
+        friendly_name: 'Thermostat Kinderzimmer'
+        value_template: '{{ states.zwave.devolo_thermostat_8.attributes.battery_level }}'
+        unit_of_measurement: '%'
+        entity_id:  zwave.devolo_thermostat_8
+        device_class: battery
+      kueche_thermostat_battery:
+        friendly_name: 'Thermostat Küche'
+        value_template: '{{ states.zwave.devolo_thermostat_12.attributes.battery_level }}'
+        unit_of_measurement: '%'
+        entity_id:  zwave.devolo_thermostat_12
+        device_class: battery
+      wohnzimmer_thermostat_battery:
+        friendly_name: 'Thermostat Wohnzimmer'
+        value_template: '{{ states.zwave.devolo_thermostat_22.attributes.battery_level }}'
+        unit_of_measurement: '%'
+        entity_id:  zwave.devolo_thermostat_22
+        device_class: battery
+      wintergarten_thermostat_battery:
+        friendly_name: 'Thermostat Wintergarten'
+        value_template: '{{ states.zwave.devolo_thermostat_15.attributes.battery_level }}'
+        unit_of_measurement: '%'
+        entity_id:  zwave.devolo_thermostat_15
+        device_class: battery
+      badezimmer_thermostat_battery:
+        friendly_name: 'Thermostat Badezimmer'
+        value_template: '{{ states.zwave.devolo_thermostat_13.attributes.battery_level }}'
+        unit_of_measurement: '%'
+        entity_id:  zwave.devolo_thermostat_13
+        device_class: battery
+      wohnzimmer_room_thermostat_battery:
+        friendly_name: 'Raumthermostat Wohnzimmer'
+        value_template: '{{ states.zwave.devolo_room_thermostat_11.attributes.battery_level }}'
+        unit_of_measurement: '%'
+        entity_id:  zwave.devolo_room_thermostat_11
+        device_class: battery
 
 
 # Text to speech
@@ -130,13 +183,11 @@ device_tracker:
     port: 8443
     username: !secret UNIFI_USER
     password: !secret UNIFI_PASSWORD
-    #ssid_filter:
-    #  - 'welle'
     verify_ssl: false
-    site_id: hh937d8w
-    track_new_devices: false
-    interval_seconds: 120
-    consider_home: 240
+    #site_id: hh937d8w
+    #track_new_devices: true
+    #interval_seconds: 120
+    #consider_home: 240
 
 switch:
   - platform: mqtt
@@ -183,6 +234,50 @@ switch:
     payload_available: "Online"
     payload_not_available: "Offline"
     retain: true
+  - platform: mqtt
+    name: "WLAN_SD5"
+    state_topic: "stat/sonoff5/POWER"
+    command_topic: "cmnd/sonoff5/POWER"
+    availability_topic: "tele/sonoff5/LWT"
+    qos: 1
+    payload_on: "ON"
+    payload_off: "OFF"
+    payload_available: "Online"
+    payload_not_available: "Offline"
+    retain: true
+  - platform: mqtt
+    name: "WLAN_SD6"
+    state_topic: "stat/sonoff6/POWER"
+    command_topic: "cmnd/sonoff6/POWER"
+    availability_topic: "tele/sonoff6/LWT"
+    qos: 1
+    payload_on: "ON"
+    payload_off: "OFF"
+    payload_available: "Online"
+    payload_not_available: "Offline"
+    retain: true
+  - platform: mqtt
+    name: "WLAN_SD7"
+    state_topic: "stat/sonoff7/POWER"
+    command_topic: "cmnd/sonoff7/POWER"
+    availability_topic: "tele/sonoff7/LWT"
+    qos: 1
+    payload_on: "ON"
+    payload_off: "OFF"
+    payload_available: "Online"
+    payload_not_available: "Offline"
+    retain: true
+  - platform: mqtt
+    name: "WLAN_SD8"
+    state_topic: "stat/sonoff8/POWER"
+    command_topic: "cmnd/sonoff8/POWER"
+    availability_topic: "tele/sonoff8/LWT"
+    qos: 1
+    payload_on: "ON"
+    payload_off: "OFF"
+    payload_available: "Online"
+    payload_not_available: "Offline"
+    retain: true
 
 scene:
   - name: Romantic
@@ -195,6 +290,14 @@ scene:
       switch.wlan_sd1: off
       switch.wlan_sd2: off
       switch.wlan_sd3: off
+  - name: Sterne_An
+      switch.wlan_sd4: on
+      switch.wlan_sd5: on
+      switch.wlan_sd6: on
+  - name: Sterne_Aus
+      switch.wlan_sd4: off
+      switch.wlan_sd5: off
+      switch.wlan_sd6: off
 
 weather:
   - platform: yweather
@@ -206,7 +309,13 @@ media_player:
 
 #ZWAVE
 zwave:
-  usb_path: /dev/ttyACM0
+  usb_path: /dev/ttyZWAVE
+  network_key: "0x2E, 0x11, 0x02, 0x8C, 0x6E, 0x4E, 0x19, 0xF2, 0xDE, 0x2A, 0xD2, 0x26, 0xE3, 0x76, 0x9F, 0xCC"
+#  polling_interval: 60000
+#  autoheal: True
+#  debug: True
+
+water_heater:
 
 #group: !include groups.yaml
 group: !include_dir_merge_named groups/

@@ -1,0 +1,4 @@
+zwave.unknown_node_6:
+  is_failed: true
+zwave.unknown_node_17:
+  is_failed: true

@@ -4,6 +4,7 @@
             {
                 "config_entry_id": null,
                 "device_id": null,
+                "disabled_by": null,
                 "entity_id": "media_player.apple_tv",
                 "name": null,
                 "platform": "apple_tv",
@@ -12,6 +13,7 @@
             {
                 "config_entry_id": null,
                 "device_id": null,
+                "disabled_by": null,
                 "entity_id": "remote.apple_tv",
                 "name": null,
                 "platform": "apple_tv",
@@ -20,6 +22,7 @@
             {
                 "config_entry_id": null,
                 "device_id": null,
+                "disabled_by": null,
                 "entity_id": "media_player.receiver",
                 "name": null,
                 "platform": "songpal",
@@ -28,6 +31,7 @@
             {
                 "config_entry_id": "8891da1957264314949c319be93da609",
                 "device_id": "018a282fa99a4007b8fedcf910410b91",
+                "disabled_by": null,
                 "entity_id": "media_player.receiver_2",
                 "name": null,
                 "platform": "cast",
@@ -36,6 +40,7 @@
             {
                 "config_entry_id": null,
                 "device_id": null,
+                "disabled_by": null,
                 "entity_id": "zwave.zwaveme_zme_uzb1_usb_stick",
                 "name": null,
                 "platform": "zwave",
@@ -44,14 +49,7 @@
             {
                 "config_entry_id": null,
                 "device_id": null,
-                "entity_id": "zwave.domitech_smart_led_retrofit_kit_ze27eu",
-                "name": null,
-                "platform": "zwave",
-                "unique_id": "node-15"
-            },
-            {
-                "config_entry_id": null,
-                "device_id": null,
+                "disabled_by": null,
                 "entity_id": "light.domitech_smart_led_retrofit_kit_ze27eu_level",
                 "name": null,
                 "platform": "zwave",
@@ -60,71 +58,8 @@
             {
                 "config_entry_id": null,
                 "device_id": null,
-                "entity_id": "zwave.danfoss_devolo_home_control_radiator_thermostat",
-                "name": null,
-                "platform": "zwave",
-                "unique_id": "node-11"
-            },
-            {
-                "config_entry_id": null,
-                "device_id": null,
-                "entity_id": "climate.danfoss_devolo_home_control_radiator_thermostat_heating_1",
-                "name": null,
-                "platform": "zwave",
-                "unique_id": "11-72057594227769362"
-            },
-            {
-                "config_entry_id": null,
-                "device_id": null,
-                "entity_id": "zwave.danfoss_devolo_home_control_radiator_thermostat_2",
-                "name": null,
-                "platform": "zwave",
-                "unique_id": "node-12"
-            },
-            {
-                "config_entry_id": null,
-                "device_id": null,
-                "entity_id": "sensor.danfoss_devolo_home_control_radiator_thermostat_temperature",
-                "name": null,
-                "platform": "zwave",
-                "unique_id": "12-72057594244251666"
-            },
-            {
-                "config_entry_id": null,
-                "device_id": null,
-                "entity_id": "climate.danfoss_devolo_home_control_radiator_thermostat_heating_1_2",
-                "name": null,
-                "platform": "zwave",
-                "unique_id": "12-72057594244546578"
-            },
-            {
-                "config_entry_id": null,
-                "device_id": null,
-                "entity_id": "zwave.danfoss_devolo_home_control_radiator_thermostat_3",
-                "name": null,
-                "platform": "zwave",
-                "unique_id": "node-7"
-            },
-            {
-                "config_entry_id": null,
-                "device_id": null,
-                "entity_id": "sensor.danfoss_devolo_home_control_radiator_thermostat_temperature_2",
-                "name": null,
-                "platform": "zwave",
-                "unique_id": "7-72057594160365586"
-            },
-            {
-                "config_entry_id": null,
-                "device_id": null,
-                "entity_id": "climate.danfoss_devolo_home_control_radiator_thermostat_heating_1_3",
-                "name": null,
-                "platform": "zwave",
-                "unique_id": "7-72057594160660498"
-            },
-            {
-                "config_entry_id": null,
-                "device_id": null,
-                "entity_id": "sensor.danfoss_devolo_home_control_radiator_thermostat_temperature_3",
+                "disabled_by": null,
+                "entity_id": "sensor.danfoss_devolo_home_control_radiator_thermostat_temperature_4",
                 "name": null,
                 "platform": "zwave",
                 "unique_id": "16-72057594311360530"
@@ -132,7 +67,8 @@
             {
                 "config_entry_id": null,
                 "device_id": null,
-                "entity_id": "climate.danfoss_devolo_home_control_radiator_thermostat_heating_1_4",
+                "disabled_by": null,
+                "entity_id": "climate.danfoss_devolo_home_control_radiator_thermostat_heating_4",
                 "name": null,
                 "platform": "zwave",
                 "unique_id": "16-72057594311655442"
@@ -140,15 +76,8 @@
             {
                 "config_entry_id": null,
                 "device_id": null,
-                "entity_id": "zwave.danfoss_devolo_home_control_radiator_thermostat_4",
-                "name": null,
-                "platform": "zwave",
-                "unique_id": "node-16"
-            },
-            {
-                "config_entry_id": null,
-                "device_id": null,
-                "entity_id": "climate.danfoss_devolo_home_control_radiator_thermostat_heating_1_5",
+                "disabled_by": null,
+                "entity_id": "climate.danfoss_devolo_home_control_radiator_thermostat_heating_5",
                 "name": null,
                 "platform": "zwave",
                 "unique_id": "17-72057594328432658"
@@ -156,15 +85,8 @@
             {
                 "config_entry_id": null,
                 "device_id": null,
-                "entity_id": "zwave.danfoss_devolo_home_control_radiator_thermostat_5",
-                "name": null,
-                "platform": "zwave",
-                "unique_id": "node-17"
-            },
-            {
-                "config_entry_id": null,
-                "device_id": null,
-                "entity_id": "sensor.danfoss_devolo_home_control_radiator_thermostat_temperature_4",
+                "disabled_by": null,
+                "entity_id": "sensor.danfoss_devolo_home_control_radiator_thermostat_temperature_6",
                 "name": null,
                 "platform": "zwave",
                 "unique_id": "18-72057594344914962"
@@ -172,7 +94,8 @@
             {
                 "config_entry_id": null,
                 "device_id": null,
-                "entity_id": "climate.danfoss_devolo_home_control_radiator_thermostat_heating_1_6",
+                "disabled_by": null,
+                "entity_id": "climate.danfoss_devolo_home_control_radiator_thermostat_heating_6",
                 "name": null,
                 "platform": "zwave",
                 "unique_id": "18-72057594345209874"
@@ -180,10 +103,1127 @@
             {
                 "config_entry_id": null,
                 "device_id": null,
+                "disabled_by": null,
                 "entity_id": "zwave.danfoss_devolo_home_control_radiator_thermostat_6",
                 "name": null,
                 "platform": "zwave",
                 "unique_id": "node-18"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.danfoss_devolo_home_control_radiator_thermostat_temperature_5",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "17-72057594328137746"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "zwave.domitech_smart_led_retrofit_kit_ze27eu_2",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "node-2"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "light.domitech_smart_led_retrofit_kit_ze27eu_level_2",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "2-72057594076299265"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "zwave.fibaro_system_fgt001_heat_controller",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "node-3"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "climate.fibaro_system_fgt001_heat_controller_heating",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "3-72057594093551634"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgt001_heat_controller_alarm_type",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "3-144115188132233217"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgt001_heat_controller_alarm_level",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "3-144115188132233233"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgt001_heat_controller_temperature",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "3-72057594093256722"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgt001_heat_controller_sourcenodeid",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "3-72057594094305313"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgt001_heat_controller_power_management",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "3-72057594094305457"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgt001_heat_controller_system",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "3-72057594094305473"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgt001_heat_controller_sourcenodeid_2",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "3-144115188132233249"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgt001_heat_controller_power_management_2",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "3-144115188132233393"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgt001_heat_controller_alarm_type_2",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "3-72057594094305281"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgt001_heat_controller_alarm_level_2",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "3-72057594094305297"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgt001_heat_controller_alarm_type_3",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "4-144115188149010433"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgt001_heat_controller_alarm_level_3",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "4-144115188149010449"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgt001_heat_controller_sourcenodeid_3",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "4-72057594111082529"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgt001_heat_controller_power_management_3",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "4-72057594111082673"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgt001_heat_controller_system_2",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "4-72057594111082689"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgt001_heat_controller_sourcenodeid_4",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "4-144115188149010465"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgt001_heat_controller_power_management_4",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "4-144115188149010609"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgt001_heat_controller_alarm_type_4",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "4-72057594111082497"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgt001_heat_controller_alarm_level_4",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "4-72057594111082513"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgt001_heat_controller_sourcenodeid_5",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "5-72057594127859745"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgt001_heat_controller_power_management_5",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "5-72057594127859889"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgt001_heat_controller_system_3",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "5-72057594127859905"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgt001_heat_controller_alarm_type_5",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "5-72057594127859713"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgt001_heat_controller_alarm_level_5",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "5-72057594127859729"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgt001_heat_controller_sourcenodeid_6",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "6-72057594144636961"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgt001_heat_controller_power_management_6",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "6-72057594144637105"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgt001_heat_controller_system_4",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "6-72057594144637121"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgt001_heat_controller_alarm_type_6",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "6-72057594144636929"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgt001_heat_controller_alarm_level_6",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "6-72057594144636945"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgt001_heat_controller_alarm_type_7",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "7-144115188199342081"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgt001_heat_controller_alarm_level_7",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "7-144115188199342097"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgt001_heat_controller_sourcenodeid_7",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "7-72057594161414177"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgt001_heat_controller_power_management_7",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "7-72057594161414321"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgt001_heat_controller_system_5",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "7-72057594161414337"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgt001_heat_controller_sourcenodeid_8",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "7-144115188199342113"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgt001_heat_controller_power_management_8",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "7-144115188199342257"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgt001_heat_controller_alarm_type_8",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "7-72057594161414145"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgt001_heat_controller_alarm_level_8",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "7-72057594161414161"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "climate.fibaro_system_fgt001_heat_controller_heating_5",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "2-72057594076774418"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgt001_heat_controller_alarm_type_9",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "2-144115188115456001"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgt001_heat_controller_alarm_level_9",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "2-144115188115456017"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgt001_heat_controller_temperature_5",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "2-72057594076479506"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgt001_heat_controller_sourcenodeid_9",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "2-72057594077528097"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgt001_heat_controller_power_management_9",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "2-72057594077528241"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgt001_heat_controller_system_6",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "2-72057594077528257"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgt001_heat_controller_sourcenodeid_10",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "2-144115188115456033"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgt001_heat_controller_power_management_10",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "2-144115188115456177"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgt001_heat_controller_alarm_type_10",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "2-72057594077528065"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgt001_heat_controller_alarm_level_10",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "2-72057594077528081"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgt001_heat_controller_alarm_type_11",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "5-144115188165787649"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgt001_heat_controller_alarm_level_11",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "5-144115188165787665"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgt001_heat_controller_sourcenodeid_11",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "5-144115188165787681"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_system_fgt001_heat_controller_power_management_11",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "5-144115188165787825"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "zwave.devolo_thermostat_8",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "node-8"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "zwave.devolo_thermostat_6",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "node-6"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "zwave.devolo_thermostat_7",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "node-7"
+            },
+            {
+                "config_entry_id": "8e6f2dd83b24462ba0829a55eea76a16",
+                "device_id": "cc43821a758242258271768e09ba4633",
+                "disabled_by": null,
+                "entity_id": "sensor.devolo_thermostat_6",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "6-72057594143588370"
+            },
+            {
+                "config_entry_id": "8e6f2dd83b24462ba0829a55eea76a16",
+                "device_id": "6632b92ead1141ab968b8b10bf63b2cc",
+                "disabled_by": null,
+                "entity_id": "sensor.devolo_thermostat_8",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "8-72057594177142802"
+            },
+            {
+                "config_entry_id": "8e6f2dd83b24462ba0829a55eea76a16",
+                "device_id": "cc43821a758242258271768e09ba4633",
+                "disabled_by": null,
+                "entity_id": "climate.devolo_thermostat_6",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "6-72057594143883282"
+            },
+            {
+                "config_entry_id": "8e6f2dd83b24462ba0829a55eea76a16",
+                "device_id": "2153da8e824e4cd0904ef56210cca0a3",
+                "disabled_by": null,
+                "entity_id": "climate.devolo_thermostat_7",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "7-72057594160660498"
+            },
+            {
+                "config_entry_id": "8e6f2dd83b24462ba0829a55eea76a16",
+                "device_id": "2153da8e824e4cd0904ef56210cca0a3",
+                "disabled_by": null,
+                "entity_id": "sensor.devolo_thermostat_7",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "7-72057594160365586"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_thermostat_4",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "4-72057594110033938"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.fibaro_thermostat_5",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "5-72057594126811154"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "zwave.fibaro_thermostat_5",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "node-5"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "zwave.fibaro_thermostat_4",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "node-4"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "zwave.domitech_9",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "node-9"
+            },
+            {
+                "config_entry_id": "8e6f2dd83b24462ba0829a55eea76a16",
+                "device_id": "6632b92ead1141ab968b8b10bf63b2cc",
+                "disabled_by": null,
+                "entity_id": "climate.devolo_thermostat_8",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "8-72057594177437714"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "climate.fibaro_thermostat_4",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "4-72057594110328850"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "climate.fibaro_thermostat_5",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "5-72057594127106066"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "light.domitech_9",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "9-72057594193739777"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "zwave.devolo_thermostat_10",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "node-10"
+            },
+            {
+                "config_entry_id": "8e6f2dd83b24462ba0829a55eea76a16",
+                "device_id": "450d930945cb4389996ce7e8468aca3f",
+                "disabled_by": null,
+                "entity_id": "sensor.devolo_thermostat_10",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "10-72057594210697234"
+            },
+            {
+                "config_entry_id": "8e6f2dd83b24462ba0829a55eea76a16",
+                "device_id": "450d930945cb4389996ce7e8468aca3f",
+                "disabled_by": null,
+                "entity_id": "climate.devolo_thermostat_10",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "10-72057594210992146"
+            },
+            {
+                "config_entry_id": "8e6f2dd83b24462ba0829a55eea76a16",
+                "device_id": "fe492019e46e4cb79604857ad3c4e7ed",
+                "disabled_by": null,
+                "entity_id": "climate.danfoss_rs_room_sensor_cooling",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "11-72057594227769378"
+            },
+            {
+                "config_entry_id": "8e6f2dd83b24462ba0829a55eea76a16",
+                "device_id": "fe492019e46e4cb79604857ad3c4e7ed",
+                "disabled_by": null,
+                "entity_id": "climate.danfoss_rs_room_sensor_unused",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "11-72057594227769394"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "zwave.devolo_room_thermostat_11",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "node-11"
+            },
+            {
+                "config_entry_id": "8e6f2dd83b24462ba0829a55eea76a16",
+                "device_id": "fe492019e46e4cb79604857ad3c4e7ed",
+                "disabled_by": null,
+                "entity_id": "sensor.devolo_room_thermostat_11",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "11-72057594227474450"
+            },
+            {
+                "config_entry_id": "8e6f2dd83b24462ba0829a55eea76a16",
+                "device_id": "fe492019e46e4cb79604857ad3c4e7ed",
+                "disabled_by": null,
+                "entity_id": "climate.devolo_room_thermostat_11",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "11-72057594227769362"
+            },
+            {
+                "config_entry_id": "8e6f2dd83b24462ba0829a55eea76a16",
+                "device_id": "40d6ed573d9e4592a4b8e43d075f1feb",
+                "disabled_by": null,
+                "entity_id": "sensor.devolo_thermostat_12",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "12-72057594244251666"
+            },
+            {
+                "config_entry_id": "8e6f2dd83b24462ba0829a55eea76a16",
+                "device_id": "643233f530804e0296dc2791c842111e",
+                "disabled_by": null,
+                "entity_id": "sensor.devolo_thermostat_13",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "13-72057594261028882"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "climate.danfoss_devolo_home_control_radiator_thermostat_heating_1",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "14-72057594278101010"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "zwave.danfoss_devolo_home_control_radiator_thermostat",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "node-14"
+            },
+            {
+                "config_entry_id": "008d9f7195524cf4a65a1285ff83d9a3",
+                "device_id": "162aef7be6674c1cb136d155a4c09f8e",
+                "disabled_by": null,
+                "entity_id": "sensor.bennystelefon_battery_level",
+                "name": null,
+                "platform": "ios",
+                "unique_id": "level_bennys_iphone_6"
+            },
+            {
+                "config_entry_id": "008d9f7195524cf4a65a1285ff83d9a3",
+                "device_id": "162aef7be6674c1cb136d155a4c09f8e",
+                "disabled_by": null,
+                "entity_id": "sensor.bennystelefon_battery_state",
+                "name": null,
+                "platform": "ios",
+                "unique_id": "state_bennys_iphone_6"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "zwave.devolo_thermostat_15",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "node-15"
+            },
+            {
+                "config_entry_id": "8e6f2dd83b24462ba0829a55eea76a16",
+                "device_id": "a629e9dbfce545c5b71df2685029d130",
+                "disabled_by": null,
+                "entity_id": "climate.devolo_thermostat_15",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "15-72057594294878226"
+            },
+            {
+                "config_entry_id": "008d9f7195524cf4a65a1285ff83d9a3",
+                "device_id": "233dd96afcf0481182e19c60a95497bd",
+                "disabled_by": null,
+                "entity_id": "sensor.ipad_battery_state",
+                "name": null,
+                "platform": "ios",
+                "unique_id": "state_ipad_von_benjamin"
+            },
+            {
+                "config_entry_id": "008d9f7195524cf4a65a1285ff83d9a3",
+                "device_id": "233dd96afcf0481182e19c60a95497bd",
+                "disabled_by": null,
+                "entity_id": "sensor.ipad_battery_level",
+                "name": null,
+                "platform": "ios",
+                "unique_id": "level_ipad_von_benjamin"
+            },
+            {
+                "config_entry_id": "8e6f2dd83b24462ba0829a55eea76a16",
+                "device_id": "fe492019e46e4cb79604857ad3c4e7ed",
+                "disabled_by": null,
+                "entity_id": "sensor.danfoss_rs_room_sensor_indicator",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "11-72057594228883457"
+            },
+            {
+                "config_entry_id": "8e6f2dd83b24462ba0829a55eea76a16",
+                "device_id": "43e000438c0043609c36efee8159dc61",
+                "disabled_by": null,
+                "entity_id": "light.domitech_16",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "16-72057594311180289"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "zwave.domitech_16",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "node-16"
+            },
+            {
+                "config_entry_id": "008d9f7195524cf4a65a1285ff83d9a3",
+                "device_id": "162aef7be6674c1cb136d155a4c09f8e",
+                "disabled_by": null,
+                "entity_id": "sensor.bennystelefon_battery_state_2",
+                "name": null,
+                "platform": "ios",
+                "unique_id": "state_bennystelefon"
+            },
+            {
+                "config_entry_id": "008d9f7195524cf4a65a1285ff83d9a3",
+                "device_id": "162aef7be6674c1cb136d155a4c09f8e",
+                "disabled_by": null,
+                "entity_id": "sensor.bennystelefon_battery_level_2",
+                "name": null,
+                "platform": "ios",
+                "unique_id": "level_bennystelefon"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "zwave.devolo_thermostat_17",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "node-17"
+            },
+            {
+                "config_entry_id": "8e6f2dd83b24462ba0829a55eea76a16",
+                "device_id": "fd8005048cd74076b1dd212efe045358",
+                "disabled_by": null,
+                "entity_id": "sensor.devolo_thermostat_19",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "19-72057594361692178"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "zwave.devolo_thermostat_19",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "node-19"
+            },
+            {
+                "config_entry_id": "8e6f2dd83b24462ba0829a55eea76a16",
+                "device_id": "fd8005048cd74076b1dd212efe045358",
+                "disabled_by": null,
+                "entity_id": "climate.devolo_thermostat_19",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "19-72057594361987090"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "zwave.devolo_thermostat_12",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "node-12"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "zwave.devolo_thermostat_13",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "node-13"
+            },
+            {
+                "config_entry_id": "8e6f2dd83b24462ba0829a55eea76a16",
+                "device_id": "643233f530804e0296dc2791c842111e",
+                "disabled_by": null,
+                "entity_id": "climate.devolo_thermostat_13",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "13-72057594261323794"
+            },
+            {
+                "config_entry_id": "8e6f2dd83b24462ba0829a55eea76a16",
+                "device_id": "40d6ed573d9e4592a4b8e43d075f1feb",
+                "disabled_by": null,
+                "entity_id": "climate.devolo_thermostat_12",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "12-72057594244546578"
+            },
+            {
+                "config_entry_id": "8e6f2dd83b24462ba0829a55eea76a16",
+                "device_id": "a629e9dbfce545c5b71df2685029d130",
+                "disabled_by": null,
+                "entity_id": "sensor.devolo_thermostat_15",
+                "name": "Wintergarten",
+                "platform": "zwave",
+                "unique_id": "15-72057594294583314"
+            },
+            {
+                "config_entry_id": "008d9f7195524cf4a65a1285ff83d9a3",
+                "device_id": "fb9684e9497d4c9fb51c7c5e884f9e47",
+                "disabled_by": null,
+                "entity_id": "sensor.mareikestelefon_battery_level",
+                "name": null,
+                "platform": "ios",
+                "unique_id": "level_mareikestelefon"
+            },
+            {
+                "config_entry_id": "008d9f7195524cf4a65a1285ff83d9a3",
+                "device_id": "fb9684e9497d4c9fb51c7c5e884f9e47",
+                "disabled_by": null,
+                "entity_id": "sensor.mareikestelefon_battery_state",
+                "name": null,
+                "platform": "ios",
+                "unique_id": "state_mareikestelefon"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "zwave.domitech_20",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "node-20"
+            },
+            {
+                "config_entry_id": "8e6f2dd83b24462ba0829a55eea76a16",
+                "device_id": "f0cfe3d2704f4a318a35f28a7b140776",
+                "disabled_by": null,
+                "entity_id": "light.domitech_20",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "20-72057594378289153"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "zwave.oomi_unknown_type0002_id0064",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "node-21"
+            },
+            {
+                "config_entry_id": "8e6f2dd83b24462ba0829a55eea76a16",
+                "device_id": "d958ad22278b44e08c5fe750592d5257",
+                "disabled_by": null,
+                "entity_id": "sensor.oomi_unknown_type0002_id0064_temperature",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "21-72057594395246610"
+            },
+            {
+                "config_entry_id": "8e6f2dd83b24462ba0829a55eea76a16",
+                "device_id": "d958ad22278b44e08c5fe750592d5257",
+                "disabled_by": null,
+                "entity_id": "sensor.oomi_unknown_type0002_id0064_luminance",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "21-72057594395246642"
+            },
+            {
+                "config_entry_id": "8e6f2dd83b24462ba0829a55eea76a16",
+                "device_id": "d958ad22278b44e08c5fe750592d5257",
+                "disabled_by": null,
+                "entity_id": "sensor.oomi_unknown_type0002_id0064_relative_humidity",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "21-72057594395246674"
+            },
+            {
+                "config_entry_id": "8e6f2dd83b24462ba0829a55eea76a16",
+                "device_id": "d958ad22278b44e08c5fe750592d5257",
+                "disabled_by": null,
+                "entity_id": "sensor.oomi_unknown_type0002_id0064_ultraviolet",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "21-72057594395247026"
+            },
+            {
+                "config_entry_id": "8e6f2dd83b24462ba0829a55eea76a16",
+                "device_id": "d958ad22278b44e08c5fe750592d5257",
+                "disabled_by": null,
+                "entity_id": "sensor.oomi_unknown_type0002_id0064_sourcenodeid",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "21-72057594396295201"
+            },
+            {
+                "config_entry_id": "8e6f2dd83b24462ba0829a55eea76a16",
+                "device_id": "d958ad22278b44e08c5fe750592d5257",
+                "disabled_by": null,
+                "entity_id": "sensor.oomi_unknown_type0002_id0064_burglar",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "21-72057594396295329"
+            },
+            {
+                "config_entry_id": "8e6f2dd83b24462ba0829a55eea76a16",
+                "device_id": "d958ad22278b44e08c5fe750592d5257",
+                "disabled_by": null,
+                "entity_id": "binary_sensor.oomi_unknown_type0002_id0064_sensor",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "21-72057594395230208"
+            },
+            {
+                "config_entry_id": "8e6f2dd83b24462ba0829a55eea76a16",
+                "device_id": "d958ad22278b44e08c5fe750592d5257",
+                "disabled_by": null,
+                "entity_id": "sensor.oomi_unknown_type0002_id0064_alarm_type",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "21-72057594396295169"
+            },
+            {
+                "config_entry_id": "8e6f2dd83b24462ba0829a55eea76a16",
+                "device_id": "d958ad22278b44e08c5fe750592d5257",
+                "disabled_by": null,
+                "entity_id": "sensor.oomi_unknown_type0002_id0064_alarm_level",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "21-72057594396295185"
+            },
+            {
+                "config_entry_id": "8e6f2dd83b24462ba0829a55eea76a16",
+                "device_id": "90ca25a068d749a3af80fba0201ba30f",
+                "disabled_by": null,
+                "entity_id": "sensor.danfoss_devolo_home_control_radiator_thermostat_temperature",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "22-72057594412023826"
+            },
+            {
+                "config_entry_id": "8e6f2dd83b24462ba0829a55eea76a16",
+                "device_id": "90ca25a068d749a3af80fba0201ba30f",
+                "disabled_by": null,
+                "entity_id": "climate.devolo_thermostat_22",
+                "name": "Wohnzimmer",
+                "platform": "zwave",
+                "unique_id": "22-72057594412318738"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "zwave.devolo_thermostat_22",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "node-22"
             }
         ]
     },

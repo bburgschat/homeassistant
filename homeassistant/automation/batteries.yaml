@@ -1,0 +1,12 @@
+#- alias: Low battery notification
+#  trigger:
+#  - platform: state
+#    entity_id: sensor.low_batteries
+#  condition:
+#  - condition: template
+#    value_template: '{% if states.sensor.low_batteries.state %}true{% else %}false{%
+#      endif %}'
+#  action:
+#  - service: notify.pushover_jan 
+#    data_template:
+#      message: 'Empty batteries: {{ states.sensor.low_batteries.state }}'

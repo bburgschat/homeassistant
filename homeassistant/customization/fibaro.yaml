@@ -1,0 +1,12 @@
+climate.fibaro_thermostat_5:
+    friendly_name: Heizungsthermostat Küche
+climate.fibaro_thermostat_4:
+    friendly_name: Heizungsthermostat Wohnzimmer
+zwave.fibaro_thermostat_5:
+    friendly_name: Heizungsthermostat Küche
+zwave.fibaro_thermostat_4:
+    friendly_name: Heizungsthermostat Wohnzimmer
+sensor.fibaro_thermostat_5:
+    friendly_name: Heizungsthermostat Küche
+sensor.fibaro_thermostat_4:
+    friendly_name: Heizungsthermostat Wohnzimmer

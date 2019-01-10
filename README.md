@@ -135,3 +135,9 @@ pi@raspberrypi:/etc/systemd/system $A
 
 A
 
+# MISC
+## Differnet IDs for zwave/climate/sensor (Devolo Thermostats)
+shutdown HA
+edit  .storage/core.entity_registry
+## Icons
+https://materialdesignicons.com

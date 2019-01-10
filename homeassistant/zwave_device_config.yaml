@@ -1,0 +1,6 @@
+climate.danfoss_rs_room_sensor_cooling:
+  ignored: true
+  polling_intensity: 0
+climate.danfoss_rs_room_sensor_unused:
+  ignored: true
+  polling_intensity: 0

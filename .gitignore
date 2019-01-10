@@ -6,3 +6,4 @@ homeassistant/*.bak
 homeassistant/OZW_Log.txt
 homeassistant/.storage
 organizr/log/nginx/access.log
+homeassistant/.storage/auth

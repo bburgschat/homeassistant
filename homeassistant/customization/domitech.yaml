@@ -1,2 +1,4 @@
-light.domitech_smart_led_retrofit_kit_ze27eu_level:
+light.domitech_20:
+    friendly_name: Eingangsleuchte
+zwave.domitech_20:
     friendly_name: Eingangsleuchte

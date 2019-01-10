@@ -1,0 +1,42 @@
+- alias: Hernhuter zu Sonnenuntergang an
+  trigger:
+    platform: sun
+    event: sunset
+    offset: "-00:30:00"
+  action:
+    service: scene.turn_on
+    entity_id: scene.Sterne_An
+#    - service: switch.turn_on
+#      data:
+#        entity_id: switch.wlan_sd4
+- alias: Hernhuter Nachts aus
+  trigger:
+     platform: time
+     at: "23:00:00"
+  action:
+    service: scene.turn_on
+    entity_id: scene.Sterne_AUS
+#    - service: switch.turn_off
+#      data:
+#        entity_id: switch.wlan_sd4
+- alias: Hernhuter morgens an
+  trigger:
+     platform: time
+     at: "06:00:00"
+  action:
+    service: scene.turn_on
+    entity_id: scene.Sterne_An
+#    - service: switch.turn_on
+#      data:
+#        entity_id: switch.wlan_sd4
+- alias: Hernhuter morgens aus
+  trigger:
+    platform: sun
+    event: sunrise
+    offset: "+00:30:00"
+  action:
+    service: scene.turn_on
+    entity_id: scene.Sterne_AUS
+#    - service: switch.turn_off
+#      data:
+#        entity_id: switch.wlan_sd4

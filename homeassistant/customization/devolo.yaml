@@ -1,0 +1,51 @@
+climate.devolo_thermostat_19:
+    friendly_name: Arbeitszimmer
+    operation_mode: heat
+    operation_list:
+    - heat
+climate.devolo_thermostat_7:
+    friendly_name: Schlafzimmer
+climate.devolo_thermostat_8:
+    friendly_name: Kinderzimmer
+climate.devolo_thermostat_10:
+    friendly_name: Wohnzimmer
+climate.devolo_room_thermostat_11:
+    friendly_name: Raumthermostat Wohnzimmer
+climate.devolo_thermostat_12:
+    friendly_name: Küche
+climate.devolo_thermostat_15:
+    friendly_name: Wintergarten
+climate.devolo_thermostat_13:
+    friendly_name: Badezimmer
+zwave.devolo_thermostat_19:
+    friendly_name: Thermostat Arbeitszimmer
+zwave.devolo_thermostat_7:
+    friendly_name: Thermostat Schlafzimmer
+zwave.devolo_thermostat_8:
+    friendly_name: Thermostat Kinderzimmer
+zwave.devolo_thermostat_10:
+    friendly_name: Thermostat Wohnzimmer
+zwave.devolo_room_thermostat_11:
+    friendly_name: Raumthermostat Wohnzimmer
+zwave.devolo_thermostat_12:
+    friendly_name: Thermostat Küche
+zwave.devolo_thermostat_15:
+    friendly_name: Thermostat Wintergarten
+zwave.devolo_thermostat_13:
+    friendly_name: Thermostat Badezimmer
+sensor.devolo_thermostat_19:
+    friendly_name: Arbeitszimmer
+sensor.devolo_thermostat_7:
+    friendly_name: Schlafzimmer
+sensor.devolo_thermostat_8:
+    friendly_name: Kinderzimmer
+sensor.devolo_thermostat_10:
+    friendly_name: Wohnzimmer
+sensor.devolo_room_thermostat_11:
+    friendly_name: Raumthermostat Wohnzimmer
+sensor.devolo_thermostat_12:
+    friendly_name: Küche
+sensor.devolo_thermostat_15:
+    friendly_name: Wintergarten
+sensor.devolo_thermostat_13:
+    friendly_name: Badezimmer
